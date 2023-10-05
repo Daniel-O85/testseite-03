@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: lightblue;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      border: double 3px blueviolet;
+      border-radius: 5px;
+      padding: 10px;
+      justify-content: center;
+      height: 120px;
+      background-color: azure;
+      opacity: 0.8;
+    }
+
+    header div {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      height: 500px;
+      overflow: auto;
+      height: 65vh;
+      margin-bottom: 20px;
+    }
+
+    main .tabelle {
+      grid-column-start: 2;
+      margin: 30px;
+      border: double 3px blueviolet;
+      border-radius: 5px;
+      padding: 20px;
+      background-color: azure;
+      opacity: 0.8;
+    }
+
+    main .bilder {
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      width: 500px;
+      margin-left: 50px;
+      border: double 3px blueviolet;
+      border-radius: 5px;
+      background-color: azure;
+      opacity: 0.8;
+      padding: 20px;
+      grid-gap: 50px;
+    }
+    main table th {
+      font-size: 20px;
+    }
+
+    img {
+      width: 100px;
+      border-radius: 10px;
+    }
+
+    main .listen {
+      display: flex;
+      margin-left: 250px;
+      border: double 3px blueviolet;
+      border-radius: 5px;
+      background-color: azure;
+      opacity: 0.8;
+      width: 500px;
+    }
+
+    main .listen ul {
+      margin-top: 70px;
+      margin-left: 50px;
+    }
+
+    main div .brote {
+      display: grid;
+      grid-template-columns: 25% 25% 25%;
+      grid-gap: 20px;
+      padding-left: 100px;
+      border: double 3px blueviolet;
+      border-radius: 5px;
+      background-color: azure;
+      opacity: 0.8;
+    }
+
+    main div .brote p {
+      padding: 10px;
+    }
+
+    footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border: double 3px blueviolet;
+      border-radius: 5px;
+      background-color: azure;
+      opacity: 0.8;
+      height: auto;
+      position: absolute;
+      bottom: 5px;
+      width: 99%;
+    }
+
+    footer div {
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+
+    footer .fuß {
+      display: flex;
+    }
+
+    .map {
+      transition: 2s;
+    }
+
+    .map :hover {
+      width: 500px;
+    }
+  </style>
+
+  <body>
+    <!--Kopfzeile-->
+
+    <header>
+      <img src="./smart-home.avif" />
+      <div>
+        <h2><a href="ubung01.html">Startseite</a></h2>
+      </div>
+      <div>
+        <h2><a href="ubung01.html">Kontakt</a></h2>
+      </div>
+      <div>
+        <h2><a href="ubung01.html">Impressum</a></h2>
+      </div>
+      <div>
+        <h4><input type="search" name="Suchen" /><button>Suchen:</button></h4>
+      </div>
+    </header>
+
+    <!--Hauptkontainer-->
+
+    <main>
+      <div class="tabelle">
+        <!--Tabellen mit Produkten-->
+
+        <table>
+          <tr>
+            <th>Smartphone:</th>
+            <th>Tablet:</th>
+            <th>Laptop:</th>
+            <th>Pc:</th>
+          </tr>
+          <tr>
+            <td>Apple IPhone</td>
+            <td>Apple IPad</td>
+            <td>Apple Mac Book</td>
+            <td>Apple Mac</td>
+          </tr>
+          <tr>
+            <td>Samasung Galaxy</td>
+            <td>Samasung Galaxy Tab</td>
+            <td>Samsung Laptop</td>
+            <td>Samsung Monitor</td>
+          </tr>
+          <tr>
+            <td>Google Pixel</td>
+            <td>Google Pixel Tab</td>
+            <td>Google Chrome Book</td>
+            <td>Google Suchmaschine</td>
+          </tr>
+          <tr>
+            <td>Xiaomi Redmi</td>
+            <td>Xiaomi Pad</td>
+            <td>Xiaomi Book Air</td>
+            <td>Xiaomi Mini Host</td>
+          </tr>
+          <tr>
+            <td>Sony Experia</td>
+            <td>Sony Experia Tablet</td>
+            <td>Sony VAIO</td>
+            <td>Sony VAIO Desktop</td>
+          </tr>
+          <tr>
+            <td>Huawei Mate</td>
+            <td>Huawei Mate Pad</td>
+            <td>Huawei Mate Book</td>
+            <td>Huawei Mate Station X</td>
+          </tr>
+        </table>
+      </div>
+      <div class="bilder">
+        <!--Bilder-->
+
+        <img src="./smartphone.jpeg" />
+        <img src="./tablet.jpeg" />
+        <img src="./laptop.jpeg" />
+        <img src="./pc.jpeg" />
+        <img src="./monitor.jpeg" />
+        <img src="./tastatur.jpeg" />
+      </div>
+
+      <div class="listen">
+        <!--Ungeordnete Listen mit Rezepten-->
+
+        <ul>
+          <h3>Pizzateig:</h3>
+          <li>Wasser</li>
+          <li>Mehl</li>
+          <li>Salz</li>
+          <li>Hefe</li>
+        </ul>
+
+        <ul>
+          <h3>Spaghetti bolognese:</h3>
+          <li>Spaghetti</li>
+          <li>Hackfleisch</li>
+          <li>Tomatensoße</li>
+          <li>Parmesan</li>
+        </ul>
+      </div>
+
+      <!--Eine Überschrift und drei Paragraphen-->
+
+      <div>
+        <h1>Brote:</h1>
+        <div class="brote">
+          <p>
+            <b>Schwarzbrot</b> steht für:<br />
+
+            Roggenbrot, dunkles Brot (in Norddeutschland auch Groffbrot)<br />
+            Rheinisches Schwarzbrot, aus Roggenschrot, Roggensauerteig,
+            Roggenflocken und Weizenmehl (im Rheinland)<br />
+            Mischbrot aus Roggen- und Weizenmehl (in Süddeutschland, Österreich
+            und der Schweiz)<br />
+            Pumpernickel, westfälisches Vollkornbrot aus Roggenschrot
+          </p>
+          <p>
+            <b>Weltmeisterbrot</b> ist eine seit 1990 in Deutschland angebotene
+            Brotsorte. Anlass der Markteinführung war eine Werbeaktion des
+            Bäckerhandwerks mit dem Nationalspieler und gelernten Bäcker Jürgen
+            Klinsmann, anlässlich der Fußball-Weltmeisterschaft 1990 in Italien,
+            bei der das deutsche Team als Weltmeister hervorging. Hierzu wurden
+            von der Akademie Deutsches Bäckerhandwerk Weinheim Rezepte für
+            Weltmeisterbrot sowie -brötchen geschaffen und in der Branche
+            verbreitet. Die Weltmeisterbrote und -brötchen wurden von Jürgen
+            Klinsmann in den Räumen der Akademie Deutsches Bäckerhandwerk
+            Weinheim präsentiert.
+          </p>
+          <p>
+            <b>Weißbrot</b> (auch Weizenbrot) ist Brot, das aus Weizenmehl
+            gebacken wird. Als Backtriebmittel wird vorwiegend Hefe, seltener
+            Weizensauer verwendet. In Deutschland muss das verwendete Mehl
+            mindestens aus 90 % Weizenmehl sein. Dieses ist glutenhaltig. Es
+            können bis zu zehn Prozent andere Getreideerzeugnisse zugegeben
+            werden. Brot enthält weniger als 10 Gewichtsanteile Fett und/oder
+            Zucker auf 90 Gewichtsanteile Getreide und/oder Getreideerzeugnisse.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!--Fußzeile-->
+
+    <footer>
+      <div class="fuß">
+        <div>
+          <h2>Sie finden uns unter folgender Adresse...</h2>
+        </div>
+        <table>
+          <tr>
+            <th>Straße/Nr.:</th>
+          </tr>
+          <tr>
+            <td>Musterstraße 1</td>
+          </tr>
+          <tr>
+            <th>Plz./Ort:</th>
+          </tr>
+          <tr>
+            <td>25863 Musterstadt</td>
+          </tr>
+          <tr>
+            <th>Land:</th>
+          </tr>
+          <tr>
+            <td>Musterland</td>
+          </tr>
+        </table>
+        <div>
+          <h3>Wegbeschreibung:</h3>
+          <br />
+          <div class="map">
+            <img src="./map.PNG" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
